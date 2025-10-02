@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Apple Symbols", sans-serif;
+  font-size: 14px;
+  color: white;
+  overflow: hidden;
+}
+
+#instructions {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#credits {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}

@@ -1,0 +1,34 @@
+/* Minimal, black background, Apple Symbols font, small text */
+:root{
+  --ui-size: 14px;
+  --ui-color: rgba(255,255,255,0.95);
+}
+html,body{
+  height:100%;
+  margin:0;
+  background:#000000;
+  font-family: "Apple Symbols", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  color:var(--ui-color);
+}
+canvas { display:block; width:100vw; height:100vh; }
+
+.ui-text{
+  position:fixed;
+  color:var(--ui-color);
+  font-size:var(--ui-size);
+  line-height:1;
+  letter-spacing:0.3px;
+  user-select:none;
+  pointer-events:none;
+  z-index:10;
+  padding:6px 8px;
+  background:transparent;
+}
+
+#ui-top{ top:8px; left:8px; }
+#ui-bottom{ bottom:8px; left:8px; }
+
+/* Make sure canvas covers full area and stays behind UI */
+#c{ position:fixed; inset:0; width:100%; height:100%; z-index:0; }

@@ -1,4 +1,4 @@
-import * as THREE from "../node_modules/three/build/three.module.js
+import * as THREE from 'https://unpkg.com/three@0.152.2/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.152.2/examples/jsm/controls/OrbitControls.js';
 import { OBJLoader } from 'https://unpkg.com/three@0.152.2/examples/jsm/loaders/OBJLoader.js';
 
